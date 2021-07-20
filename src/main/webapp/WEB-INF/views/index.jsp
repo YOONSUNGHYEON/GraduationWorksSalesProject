@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +48,8 @@
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </span>
             <span class="right">
-                    <a href="#x" data-toggle="modal" data-target=".login-modal"><i class="fas fa-user mr-1"></i> <span>Login</span></a>
-                    <a href="#x" data-toggle="modal" data-target=".register-modal"><i class="fas fa-lock mr-1"></i> <span>Register</span></a>
+                    <a href="#x" data-toggle="modal" data-target=".login-modal"><i class="fas fa-user mr-1"></i> <span>로그인</span></a>
+                    <a href="#x" data-toggle="modal" data-target=".register-modal"><i class="fas fa-lock mr-1"></i> <span>회원가입</span></a>
                 </span>
         </p>
     </div><!-- / container -->
@@ -139,8 +142,8 @@
 <div class="container">
     <header class="home-header parallax">
         <div class="header-content dark text-center">
-            <h1 class="header-title mb-0">GALLERIO - GALLERY</h1>
-            <p class="inner-space mb-0">Clean & Elegant Gallery Shop</p>
+            <h1 class="header-title mb-0">Artwork Seller</h1>
+            <p class="inner-space mb-0">graduation artwork</p>
         </div><!-- / header-content -->
     </header>
 </div><!-- / container -->
@@ -149,11 +152,8 @@
     <div class="container">
         <!-- gallery filter -->
         <ul class="gallery-filter list-inline text-center">
-            <li><a href="#" data-group="all" class="active ml-2">SEE ALL</a></li>
-            <li><a href="#" data-group="framed">FRAMED</a></li>
-            <li><a href="#" data-group="print">PRINT</a></li>
-            <li><a href="#" data-group="digital">DIGITAL</a></li>
-            <li><a href="#" data-group="photography">PHOTOGRAPHY</a></li>
+            <li><a href="#" data-group="all" class="active ml-2">모두 보기</a></li>
+            <li><a href="#" data-group="framed">실시간 급상승</a></li>
         </ul>
         <!-- / gallery filter -->
     </div><!-- / container -->
@@ -169,7 +169,7 @@
                             <h2 class="hover-title text-center text-white">AMAZING FRAMED ART</h2><!-- / hover-title -->
                             <p class="gallery-info text-center text-white">Framed - From $29.99
                                 <span class="gallery-icons">
-                                        <a href="#x" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
+                                        <a href="/blog" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
                                         <a href="shopping-cart.html" class="gallery-button"><i class="fas fa-shopping-cart"></i></a>
                                     </span><!--/ gallery-icons -->
                             </p><!-- / gallery-info -->
@@ -205,7 +205,7 @@
                             <h2 class="hover-title text-center text-white">ROSE GIRL PAINTING</h2><!-- / hover-title -->
                             <p class="gallery-info text-center text-white">Framed - From $99.99
                                 <span class="gallery-icons">
-                                        <a href="#x" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
+                                        <a href="/blog" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
                                         <a href="shopping-cart.html" class="gallery-button"><i class="fas fa-shopping-cart"></i></a>
                                     </span><!--/ gallery-icons -->
                             </p><!-- / gallery-info -->
@@ -223,7 +223,7 @@
                             <h2 class="hover-title text-center text-white">COLORFULL PAINTING</h2><!-- / hover-title -->
                             <p class="gallery-info text-center text-white">Framed - From $69.99
                                 <span class="gallery-icons">
-                                        <a href="#x" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
+                                        <a href="/blog" class="gallery-button" data-toggle="modal" data-target=".framed-product"><i class="fas fa-plus"></i></a>
                                         <a href="shopping-cart.html" class="gallery-button"><i class="fas fa-shopping-cart"></i></a>
                                     </span><!--/ gallery-icons -->
                             </p><!-- / gallery-info -->
@@ -401,7 +401,7 @@
 
 <footer class="bg-white">
     <div class="container-fluid text-center">
-        <p>© 2018 <b>Gallerio</b> by <a href="https://kingstudio.ro" target="_blank">KingStudio</a>. All Rights Reserved.</p>
+        <p>Â© 2018 <b>Gallerio</b> by <a href="https://kingstudio.ro" target="_blank">KingStudio</a>. All Rights Reserved.</p>
     </div><!-- / container-fluid -->
 </footer>
 
@@ -412,7 +412,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">LOG IN</h5>
+                <h5 class="modal-title">로그인</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
