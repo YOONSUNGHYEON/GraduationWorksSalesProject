@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 
@@ -72,40 +74,37 @@
         <div class="collapse navbar-collapse" id="navbar-toggle-1">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link first-menu-item dropdown-toggle" href="#x" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown1">
-                        <a class="dropdown-item" href="index.html">Main Demo</a>
-                        <a class="dropdown-item" href="index2.html">Full Width</a>
-                        <a class="dropdown-item" href="index3.html">Full Screen</a>
+                    <a class="nav-link dropdown-toggle" href="#x" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">작품</a>
+                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown2">
+                        <a class="dropdown-item" href="#x">먹거리</a>
+                        <a class="dropdown-item" href="#x">의류 및 악세사리</a>
+                        <a class="dropdown-item" href="#x">장식품</a>
+                        <a class="dropdown-item" href="#x">디지털 관련</a>
+                        <a class="dropdown-item" href="#x">생활용품</a>
+                        <a class="dropdown-item" href="#x">문구</a>
                     </div><!-- / dropdown-menu -->
                 </li><!-- / dropdown -->
                 <li class="nav-item after-dropdown">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="/about">온라인 클래스</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#x" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown2">
-                        <a class="dropdown-item" href="#x">Framed</a>
-                        <a class="dropdown-item" href="#x">Print</a>
-                        <a class="dropdown-item" href="#x">Digital</a>
-                        <a class="dropdown-item" href="#x">Photography</a>
-                    </div><!-- / dropdown-menu -->
-                </li><!-- / dropdown -->
+                <li class="nav-item after-dropdown">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
             </ul><!-- / navbar-nav -->
         </div><!-- / navbar-collapse -->
 
-        <a class="navbar-brand m-auto" href="#x"><img src="resources/images/logo-icon.png" alt=""></a>
+        <a class="navbar-brand m-auto" href="/"><img src="resources/images/logo-icon.png" alt=""></a>
 
         <div class="collapse navbar-collapse" id="navbar-toggle-2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="/blog">블로그</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link before-count" href="contact.html">Contact</a>
+                    <a class="nav-link before-count" href="/contact">문의하기</a>
                 </li>
                 <li class="nav-item dropdown extra-dropdowns">
-                    <a class="nav-link last-menu-item has-dropdown-toggle dropdown-toggle" href="#x" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shopping Cart<span class="count count-primary">2</span></a>
+                    <a class="nav-link last-menu-item has-dropdown-toggle dropdown-toggle" href="#x" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">장바구니<span class="count count-primary">2</span></a>
                     <div class="dropdown-menu animated fadeIn fast" aria-labelledby="dropdown3">
                         <div class="cart-small">
                             <img src="resources/images/product-small1.jpg" alt="">
@@ -138,98 +137,32 @@
 <div class="container">
     <header class="account-header parallax">
         <div class="header-content dark text-center">
-            <h1 class="header-title mb-0">Login</h1>
-            <p class="inner-space mb-0">John Doe</p>
+            <h1 class="header-title mb-0" style="font-size:50px">회원 유형을 선택해주세요</h1>
+            <p class="inner-space mb-0" style="font-size:20px">판매자는 학교 인증 절차를 거쳐야 합니다</p>
         </div><!-- / header-content -->
+
     </header>
 </div><!-- / container -->
-
-<div class="spacer-2x">&nbsp;</div>
-<form action="/customlogin" method="post">
-    <div class="inner-space login" tabindex="-1" role="dialog" style="width: 750px; text-align:center; margin-left: 565px;">
-        <div class="dialog">
-            <div class="content">
-                <div class="header">
-                    <h5 class="title">LOG IN</h5>
-                </div><!-- / modal-header -->
-                <div class="login-body">
-                    <div class="custom-form">
-                        <div class="form-wrapper">
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-                            <input type="text" class="form-control mb-3" id="login-input" name="username" placeholder="Email">
-                            <input type="password" class="form-control mb-3" id="login-password-input" name="password" placeholder="Password">
-                            <div class="form-inline-extras">
-                                <div class="left-area">
-                                    <div class="checkbox checkbox-primary ml-2">
-                                        <label class="hidden"><input type="checkbox"></label>
-                                        <input id="checkbox5" type="checkbox">
-                                        <label for="checkbox5">
-                                            Remember Me
-                                        </label>
-                                    </div><!-- / checkbox -->
-                                </div><!-- / left-area -->
-                                <div class="right-area">
-                                    <button type="submit" class="btn btn-primary rectangle">LOG IN</button>
-                                </div><!-- / right-area -->
-                            </div><!-- / form-inline-extras -->
-                            <div class="text-left mt-2">
-                                <a href="#x">Forgot your password?</a>
-                            </div><!-- / text-left -->
-                        </div><!-- / form-wrapper -->
-                    </div><!-- / custom-form -->
-                </div><!-- / modal-body -->
-            </div><!-- / modal-content -->
-        </div><!-- / modal-dialog -->
-    </div><!-- / modal -->
-    <!-- / login-modal -->
-</>
-<div class="footer-widgets">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <div class="widget">
-                    <img src="resources/images/logo-icon.png" alt="logo" class="footer-logo">
-                    <p class="mb-3">Vivamus sodales eleifend sem eu malesuada nunc.</p>
-                </div><!-- / widget -->
-            </div><!-- / column-->
-
-            <div class="col-lg-3 text-center">
-                <div class="widget">
-                    <h3 class="widget-title">USEFUL LINKS</h3>
-                    <ul class="footer-list pl-0 mb-0">
-                        <li class="mb-3"><a href="#x">Privacy Policy</a></li>
-                        <li class="mb-3"><a href="#x">Terms &amp; Conditions</a></li>
-                        <li class="mb-3"><a href="#x">News &amp; Updates</a></li>
-                    </ul>
-                </div><!-- / widget -->
-            </div><!-- / column-->
-
-            <div class="col-lg-3 text-center">
-                <div class="widget">
-                    <h3 class="widget-title">CATEGORIES</h3>
-                    <ul class="footer-list pl-0 mb-0">
-                        <li class="mb-3"><a href="#x">Framed</a></li>
-                        <li class="mb-3"><a href="#x">Print</a></li>
-                        <li class="mb-3"><a href="#x">Digital</a></li>
-                    </ul>
-                </div><!-- / widget -->
-            </div><!-- / column-->
-
-            <div class="col-lg-3 text-center">
-                <div class="widget">
-                    <h3 class="widget-title">CONTACT US</h3>
-                    <ul class="footer-list pl-0 mb-0">
-                        <li class="mb-3"><a href="tel:01234567890"><i class="fas fa-phone mr-2"></i> 0123 456 7890</a></li>
-                        <li class="mb-3"><a href="mailto:info@youriste.com"><i class="fas fa-envelope mr-2"></i> info@yoursite.com</a></li>
-                        <li class="mb-3"><a href="#x"><i class="fab fa-twitter mr-2"></i> @GallerioTwitter</a></li>
-                    </ul>
-                </div><!-- / widget -->
-            </div><!-- / column-->
-        </div><!-- / row -->
-    </div><!-- / container -->
-</div><!-- / footer-widgets -->
-
-<footer class="bg-white">
+<div class="main-section" style="text-align:center; margin-top:20px;">
+    <div class="jobask" style="height:300px; background-color: darkgray; margin-left:340px; float:left; width: 400px; font-size: 40px; color:white;">
+        <i class="fas fa-cart-arrow-down" style="height: 100px; width:100px; padding-top: 60px;"></i><br>
+        구매자
+        <br><button class="btn btn-primary rectangle">선택</button>
+    </div><!-- / gallery -->
+    <div class="jobask" style="height:300px; background-color: darkgray; margin-left:10px; float:left; width: 400px; font-size: 40px; color:white;">
+        <i class="fas fa-image" style="height: 100px; width:100px; padding-top: 60px;"></i><br>
+        판매자
+        <br><button class="btn btn-primary rectangle">선택</button>
+    </div><!-- / gallery -->
+    <div class="jobask" style="height:300px; background-color: darkgray; margin-left:10px; float:left; width: 400px; font-size: 40px; color:white;">
+        <i class="fas fa-cart-arrow-down" style="height: 100px; width:100px; padding-top: 60px;"></i>
+        <i class="fas fa-image" style="height: 100px; width:100px; padding-top: 60px;"></i>
+        <br>
+        구매자 & 판매자
+        <br><button class="btn btn-primary rectangle">선택</button>
+    </div>
+</div>
+<footer class="bg-white" style="margin-top: 500px;">
     <div class="container-fluid text-center">
         <p>© 2018 <b>Gallerio</b> by <a href="https://kingstudio.ro" target="_blank">KingStudio</a>. All Rights Reserved.</p>
     </div><!-- / container-fluid -->
@@ -317,6 +250,55 @@
 <!-- / register-modal -->
 
 <!-- / modals -->
+
+
+
+<!-- Core JavaScript -->
+<script src="resources/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+<!-- / Core JavaScript -->
+
+<!-- preloader -->
+<script src="resources/js/preloader.js"></script>
+<!-- / preloader -->
+
+
+<!-- gallery Script -->
+<script src="resources/js/jquery.shuffle.min.js"></script>
+<script src="resources/js/gallery.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+                // handle the mouseleave functionality
+                .mouseleave(function(){
+                    $(this).removeClass("hover");
+                });
+        }
+    });
+</script>
+<!-- / gallery Script -->
 
 <!-- Core JavaScript -->
 <script src="resources/js/jquery.min.js"></script>
