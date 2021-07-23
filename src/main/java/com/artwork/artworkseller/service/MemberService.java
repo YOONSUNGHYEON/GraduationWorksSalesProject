@@ -41,6 +41,7 @@ public class MemberService implements UserDetailsService {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         newMember.setNickname(memberDto.getNickname());
         newMember.setPassword(passwordEncoder.encode(memberDto.getPassword()));
+        newMember.setPhonenum(memberDto.getPhonenum());
         newMember.setJoindate(format1.format(time.getTime()));
         newMember.setEmail(memberDto.getEmail());
         newMember.setSchool("");
