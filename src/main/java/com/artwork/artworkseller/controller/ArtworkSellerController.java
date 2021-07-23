@@ -71,6 +71,11 @@ public class ArtworkSellerController {
         return "single-post";
     }
 
+    @RequestMapping(value = "/jobask", method = RequestMethod.GET)
+    public String toJobAsk() {
+        return "jobAsk";
+    }
+
     @RequestMapping(value = "/signup", method = RequestMethod.GET)
     public String tosignup() {
         return "custom-signup";
@@ -81,6 +86,8 @@ public class ArtworkSellerController {
         memberService.joinUser(memberDTO);
         return "redirect:/";
     }
+
+
 
     @RequestMapping("/denied")
     public String denied(Model model, Authentication auth, HttpServletRequest req) {

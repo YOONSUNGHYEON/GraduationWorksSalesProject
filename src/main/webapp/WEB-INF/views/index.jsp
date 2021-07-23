@@ -48,8 +48,8 @@
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </span>
             <span class="right">
-                    <a href="#x" data-toggle="modal" data-target=".login-modal"><i class="fas fa-user mr-1"></i> <span>로그인</span></a>
-                    <a href="#x" data-toggle="modal" data-target=".register-modal"><i class="fas fa-lock mr-1"></i> <span>회원가입</span></a>
+                    <a href="/customlogin"><i class="fas fa-user mr-1"></i> <span>로그인</span></a>
+                    <a href="/signup"><i class="fas fa-lock mr-1"></i> <span>회원가입</span></a>
                 </span>
         </p>
     </div><!-- / container -->
@@ -76,40 +76,37 @@
         <div class="collapse navbar-collapse" id="navbar-toggle-1">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link first-menu-item active dropdown-toggle" href="#x" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown1">
-                        <a class="dropdown-item active" href="index.html">Main Demo</a>
-                        <a class="dropdown-item" href="index2.html">Full Width</a>
-                        <a class="dropdown-item" href="index3.html">Full Screen</a>
+                    <a class="nav-link dropdown-toggle" href="#x" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">작품</a>
+                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown2">
+                        <a class="dropdown-item" href="#x">먹거리</a>
+                        <a class="dropdown-item" href="#x">의류 및 악세사리</a>
+                        <a class="dropdown-item" href="#x">장식품</a>
+                        <a class="dropdown-item" href="#x">디지털 관련</a>
+                        <a class="dropdown-item" href="#x">생활용품</a>
+                        <a class="dropdown-item" href="#x">문구</a>
                     </div><!-- / dropdown-menu -->
                 </li><!-- / dropdown -->
                 <li class="nav-item after-dropdown">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="/about">온라인 클래스</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#x" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                    <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown2">
-                        <a class="dropdown-item" href="#x">Framed</a>
-                        <a class="dropdown-item" href="#x">Print</a>
-                        <a class="dropdown-item" href="#x">Digital</a>
-                        <a class="dropdown-item" href="#x">Photography</a>
-                    </div><!-- / dropdown-menu -->
-                </li><!-- / dropdown -->
+                <li class="nav-item after-dropdown">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
             </ul><!-- / navbar-nav -->
         </div><!-- / navbar-collapse -->
 
-        <a class="navbar-brand m-auto" href="#x"><img src="resources/images/logo-icon.png" alt=""></a>
+        <a class="navbar-brand m-auto" href="/"><img src="resources/images/logo-icon.png" alt=""></a>
 
         <div class="collapse navbar-collapse" id="navbar-toggle-2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="/blog">블로그</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link before-count" href="contact.html">Contact</a>
+                    <a class="nav-link before-count" href="/contact">문의하기</a>
                 </li>
                 <li class="nav-item dropdown extra-dropdowns">
-                    <a class="nav-link last-menu-item has-dropdown-toggle dropdown-toggle" href="#x" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shopping Cart<span class="count count-primary">2</span></a>
+                    <a class="nav-link last-menu-item has-dropdown-toggle dropdown-toggle" href="#x" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">장바구니<span class="count count-primary">2</span></a>
                     <div class="dropdown-menu animated fadeIn fast" aria-labelledby="dropdown3">
                         <div class="cart-small">
                             <img src="resources/images/product-small1.jpg" alt="">
@@ -330,7 +327,7 @@
 <div class="spacer-2x">&nbsp;</div>
 
 <section id="clients" class="bg-white">
-    <h4 class="text-center">HAPPY CLIENTS</h4>
+    <h4 class="text-center">인기 리뷰</h4>
     <div class="spacer spacer-line border-primary">&nbsp;</div>
     <div class="spacer">&nbsp;</div>
     <div class="container">
